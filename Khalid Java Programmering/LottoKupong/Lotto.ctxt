@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Lotto()
+comment1.params=
+comment1.target=int[]\ generer()
+comment2.params=
+comment2.target=int[]\ Setin()
+comment3.params=
+comment3.target=int[]\ getMinrekke()
+comment4.params=
+comment4.target=int[]\ getUkensrekke()
+comment5.params=ukensrekke\ minrekke
+comment5.target=int\ compare(int[],\ int[])
+comment6.params=ukensrekke
+comment6.target=void\ print(int[])
+numComments=7
