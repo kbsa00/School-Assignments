@@ -1,5 +1,5 @@
 /**
- * Fibonacci oppgave med for loop og while loop
+ * Fibonacci oppgave med for loop og while loop !
  */
 public class Fibonacci
 {
