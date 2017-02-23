@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Client()
+comment0.text=\n\ We\ are\ putting\ the\ price\ and\ the\ name\ of\ the\ GroceryItem\ in\ this\ code.\ \n
+comment1.params=
+comment1.target=void\ clientMethod()
+comment1.text=\n\ We\ are\ printing\ out\ the\ recipt\ of\ the\ both\ names\ and\ prices\ of\ the\ GrocceryItem\n\ that\ we\ previously\ added\ and\ summs\ up\ both\ prices\ for\ you.\ \n
+numComments=2
