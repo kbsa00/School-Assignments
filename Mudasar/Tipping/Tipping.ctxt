@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Tipping()
+comment1.params=
+comment1.target=void\ weekResult()
+comment2.params=
+comment2.target=char[]\ getWeekResult()
+comment3.params=ukensRekke
+comment3.target=void\ print(char[])
+comment4.params=
+comment4.target=char[]\ register()
+comment5.params=ukensRekke\ minRekke
+comment5.target=int\ check(char[],\ char[])
+numComments=6

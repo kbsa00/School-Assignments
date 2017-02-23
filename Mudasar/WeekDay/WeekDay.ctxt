@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=day
+comment0.target=java.lang.String\ weekDay(int)
+comment1.params=dayName
+comment1.target=int\ weekDay(java.lang.String)
+numComments=2
