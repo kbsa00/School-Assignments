@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class arrayList
 {
     private ArrayList<String> studentList;
+    private ArrayList<String> friendsList;
 
     public void mainMethod() {
         studentList = new ArrayList<>();
@@ -62,5 +63,17 @@ public class arrayList
             System.out.println(studentList.get(place));
             place++;
         }
+    }
+
+    public void addFriends() {
+        friendsList = new ArrayList<>();
+        Scanner scanner = new Scanner(System.in);
+
+        int index = 0;
+        while(index < 3) {
+            friendsList.add(scanner.nextLine());
+            index++;
+        }
+        System.out.println(friendsList.size());
     }
 }
