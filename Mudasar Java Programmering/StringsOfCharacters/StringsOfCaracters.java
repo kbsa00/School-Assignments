@@ -1,6 +1,4 @@
- 
-
-import java.util.Scanner;
+ import java.util.Scanner;
 
 /**
  * Write a description of class StringsOfCaracters here.
@@ -57,5 +55,19 @@ public class StringsOfCaracters
         else {
             System.out.println("Sorry!");
         }
+    }
+    
+    public void mainMethod4() {
+        String name = "ReverseThisName";
+        String reverse = new StringBuffer(name).reverse().toString();
+        System.out.println(reverse);
+    }
+    
+    public void mainMethod5() {
+        String myword = "ThisisyournameMudasar";
+        System.out.println(myword.substring(14));
+        
+        String mynewword = "WesterdalsMudasarAhmadJavaClass";
+        System.out.println(mynewword.substring(10,17));
     }
 }
