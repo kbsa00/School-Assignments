@@ -1,14 +1,14 @@
 #BlueJ class context
 comment0.params=
-comment0.target=void\ mainMethod()
+comment0.target=void\ lengthMethod()
 comment1.params=
-comment1.target=void\ mainMethod1()
+comment1.target=void\ charAtMethod()
 comment2.params=
-comment2.target=void\ mainMethod2()
+comment2.target=void\ charAndLengthInputMethod()
 comment3.params=
-comment3.target=void\ mainMethod3()
+comment3.target=void\ lengthElseIfMethod()
 comment4.params=
-comment4.target=void\ mainMethod4()
+comment4.target=void\ reverseMethod()
 comment5.params=
-comment5.target=void\ mainMethod5()
+comment5.target=void\ substringMethod()
 numComments=6

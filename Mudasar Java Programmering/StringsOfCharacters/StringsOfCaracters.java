@@ -8,7 +8,7 @@
  */
 public class StringsOfCaracters
 {
-    public void mainMethod() {
+    public void lengthMethod() {
 
         String banana = "banana";
         String cucumber = "cucumber";
@@ -19,7 +19,7 @@ public class StringsOfCaracters
         System.out.println("The word " + together + " length is " + together.length());
     }
 
-    public void mainMethod1() {
+    public void charAtMethod() {
 
         String myname = "MudasarAhmadCheema";
 
@@ -27,7 +27,7 @@ public class StringsOfCaracters
         System.out.println("The 6th character of the name is " + characters);
     }
 
-    public void mainMethod2() {
+    public void charAndLengthInputMethod() {
 
         Scanner scan = new Scanner(System.in);
 
@@ -39,7 +39,7 @@ public class StringsOfCaracters
         System.out.println("Last letter in this name is: " + myname.charAt(myname.length()-1));
     }
 
-    public void mainMethod3() {
+    public void lengthElseIfMethod() {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Type your word");
@@ -57,13 +57,13 @@ public class StringsOfCaracters
         }
     }
     
-    public void mainMethod4() {
+    public void reverseMethod() {
         String name = "ReverseThisName";
         String reverse = new StringBuffer(name).reverse().toString();
         System.out.println(reverse);
     }
     
-    public void mainMethod5() {
+    public void substringMethod() {
         String myword = "ThisisyournameMudasar";
         System.out.println(myword.substring(14));
         
