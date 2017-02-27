@@ -20,7 +20,8 @@ public class UsernamePassword
         String username = scan.nextLine();
         System.out.println();
         System.out.println("Type your password: ");
-        String password = scan.nextLine();
+        String password = scan.nextLine(); 
+      
         System.out.println();
 
         if(username.equals(userName) && password.equals(passWord)) {
