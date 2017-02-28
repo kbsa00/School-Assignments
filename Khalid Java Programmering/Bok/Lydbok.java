@@ -12,8 +12,8 @@ public class Lydbok extends Bok
     private String oppleser; 
 
     
-    public Lydbok( String minutter, int disker, String oppleser, int ISBN, int antallinne,
-    String tittel, String forfatter, String forlag)
+    public Lydbok(int ISBN, String tittel, String forfatter, int antallinne, String forlag, int min, int disker,
+    String oppleser)
     {
         super(ISBN, tittel, forfatter, antallinne, forlag); 
         setMinutter(min);

@@ -12,8 +12,8 @@ public class TryktBok extends Bok
     private int registrert;
     
     
-    public TryktBok( int sider,int registrert, int antallinne, String forlag,
-    int ISBN, String tittel, String forfatter)
+    public TryktBok(int ISBN, String tittel, String forfatter,int antallinne,
+    String forlag, int sider, int registrert)
     {
         super(ISBN, tittel, forfatter, antallinne, forlag);
         setSider(sider); 
@@ -36,6 +36,7 @@ public class TryktBok extends Bok
     {
         return sider; 
     }
+    
     
     public int getRegistrert()
     {
