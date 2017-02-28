@@ -12,13 +12,15 @@ public class Bok
     private String forlag;
     private String forfatter;
     private String tittel;
+    private int antallRegistrert;
     
-    public Bok(int isbn, String forfatter, String tittel, String forlag, int antallInne) {
+    public Bok(int isbn, String forfatter, String tittel, String forlag, int antallInne, int antallRegistrert) {
         setIsbn(isbn);
         setAntallInne(antallInne);
         setForlag(forlag);
         setForfatter(forfatter);
         setTittel(tittel);
+        setAntallRegistrert(antallRegistrert);
     }
     
     public void setIsbn(int isbn) {
@@ -61,7 +63,15 @@ public class Bok
         return tittel;
     }
     
+    public void setAntallRegistrert(int antallRegistrert) {
+        this.antallRegistrert = antallRegistrert;
+    }
+    
+    public int getAntallRegistrert() {
+        return antallRegistrert;
+    }
+    
     public String toString() {
-        return "ISBN: " + getIsbn() + " \nForfatter: " + getForfatter() + " \nTittel: " + getTittel() + " \nForlag: " + getForlag() + " \nAntall inne: " + getAntallInne();
+        return "ISBN: " + getIsbn() + " \nForfatter: " + getForfatter() + " \nTittel: " + getTittel() + " \nForlag: " + getForlag() + " \nAntall inne: " + getAntallInne() + " \nAntall Registrert " + getAntallRegistrert();
     }
 }

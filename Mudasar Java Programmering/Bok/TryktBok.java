@@ -8,12 +8,10 @@
 public class TryktBok extends Bok
 {
     private int antallSider;
-    private int antallRegistrert;
 
     public TryktBok(int isbn, String forfatter, String forlag, String tittel, int antallInne, int antallRegistrert, int antallSider) {
-        super(isbn, forfatter, tittel, forlag, antallInne);
+        super(isbn, forfatter, tittel, forlag, antallInne, antallRegistrert);
         setAntallSider(antallSider);
-        setAntallRegistrert(antallRegistrert);
     }
     
     public void setAntallSider(int antallSider) {
@@ -22,14 +20,6 @@ public class TryktBok extends Bok
     
     public int getAntallSider() {
         return antallSider;
-    }
-    
-    public void setAntallRegistrert(int antallRegistert) {
-        this.antallRegistrert = antallRegistrert;
-    }
-    
-    public int getAntallRegistrert() {
-        return antallRegistrert;
     }
     
     public String toString() {
