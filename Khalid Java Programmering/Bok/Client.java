@@ -16,6 +16,6 @@ public class Client
          list.add(new TryktBok(23456, "Norsk sokkel", "Heidi Linde", 8, "Gyldendaal", 295, 5);
          list.add(new Lydbok(34567. "De utrolige", "Linn Ullmann", 8, "Oktober", 410, 5
         
-    
+         
     }
 }   
