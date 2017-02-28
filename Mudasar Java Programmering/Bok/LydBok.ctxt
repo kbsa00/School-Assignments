@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=isbn\ forfatter\ tittel\ forlag\ antallInne\ antallMinutter\ antallDisker\ oppleser
+comment0.target=LydBok(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ java.lang.String)
+comment1.params=antallDisker
+comment1.target=void\ setAntallDisker(int)
+comment2.params=
+comment2.target=int\ getAntallDisker()
+comment3.params=antallMinutter
+comment3.target=void\ setAntallMinutter(int)
+comment4.params=
+comment4.target=int\ getAntallMinutter()
+comment5.params=oppleser
+comment5.target=void\ setOppleser(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getOppleser()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

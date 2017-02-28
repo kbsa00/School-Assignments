@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=isbn\ forfatter\ tittel\ forlag\ antallInne
+comment0.target=Bok(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment1.params=isbn
+comment1.target=void\ setIsbn(int)
+comment10.params=
+comment10.target=java.lang.String\ getTittel()
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=int\ getIsbn()
+comment3.params=antallInne
+comment3.target=void\ setAntallInne(int)
+comment4.params=
+comment4.target=int\ getAntallInne()
+comment5.params=forlag
+comment5.target=void\ setForlag(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getForlag()
+comment7.params=forfatter
+comment7.target=void\ setForfatter(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getForfatter()
+comment9.params=tittel
+comment9.target=void\ setTittel(java.lang.String)
+numComments=12
