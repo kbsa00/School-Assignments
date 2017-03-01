@@ -1,0 +1,270 @@
+#house{
+    position: absolute;
+    height: 70%;
+    opacity: 1;
+    top: -5%;
+    left: 190%;
+    z-index: 2;
+    animation-name: backgroundAnim;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+#ground{
+    position: absolute;
+    background-color: #78AB46;
+    width:1280px;
+    height:300px;
+    bottom: 0%;
+    z-index: 1;
+}
+
+#sun{
+    position: absolute;
+    transform: scale(0.3,0.3);
+    top: -20%;
+    left:50%;
+    z-index: 1;
+}
+
+#cloud1{
+    position: absolute;
+    transform: scale(0.6,0.6);
+    left: -5%
+}
+
+#cloud2{
+    position: absolute;
+    transform: scale(0.4,0.4);
+    left:75%
+}
+
+#cloud3{
+    position: absolute;
+    transform: scale(0.5,0.5);
+    left:30%;
+    bottom: 75%;
+}
+
+#drone{
+    position: absolute;
+    height:24%;
+    top: 33%;
+    left: 17%;
+    z-index: 15;
+    animation: 20s ease-in-out 0s normal forwards droneAnim1;
+}
+    
+@keyframes droneAnim1{
+    0%{
+        top: 33%;
+        left: 17%;
+        transform: scale(1,1);
+    }
+    50%{
+        top: 33%;
+        left: 44%;
+        transform: scale(1,1);
+    }
+    55%{
+        top: 53%;
+        left: 44%;
+        transform: scale(0.5,0.5);
+    }
+    70%{
+        left: -50%;
+        transform: scale(1,1);
+    }
+    100%{
+        left: -50%;
+    }
+}
+
+#package{
+    position: absolute;
+    height: 32%;
+    top: 35%;
+    left: 20%;
+    z-index: 16;
+    animation: 20s ease-in-out normal forwards packageAnim;
+    }
+
+@keyframes packageAnim{
+    0%{
+        top: 35%;
+        left: 18%;
+        transform: scale(1,1);
+    }
+    50%{
+        top: 35%;
+        left: 44%;
+        transform: scale(1,1);
+    }
+    55%{
+        top: 53%;
+        left: 44%;
+        transform: scale(0.5,0.5);
+    }
+    56%{
+        top: 53%;
+        left: 44%;
+        transform: scale(0.5,0.5);
+    }
+    100%{
+        top: 53%;
+        left: 44%;
+        transform: scale(0.5,0.5);
+    }
+}
+
+@keyframes backgroundAnim{
+    100%{
+        transform: translatex(-2250px);
+    }
+}
+
+#forestTree1{
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    animation-name: backgroundAnim;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    z-index: 2;
+}
+
+#forestTree2{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    animation-name: backgroundAnim;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    z-index: 2;
+}
+
+#forestTree3{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    animation-name: backgroundAnim;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    z-index: 2;
+}
+
+#baymaxFront{
+    position: absolute;
+    height: 80%;
+    top:0%; 
+    left: 0%;
+    z-index: 10;
+    animation: 2s ease-in-out normal forwards infinite baymaxFrontAnim;
+}
+
+@keyframes baymaxFrontAnim{
+    0%{
+        top:0%;
+    }
+    50%{
+        top:10%;
+    }
+    100%{
+        top:0%;
+    }
+}
+
+#baymaxDiv{
+    position: absolute;
+    height:25%;
+    width: 10%;
+    z-index: 20;
+    bottom: 150%;
+    left: 45%;
+    animation: 5s ease-in-out 10s normal forwards baymaxDivAnim;
+}
+
+/*Move baymax animation*/
+@keyframes baymaxDivAnim{
+    0%{
+        bottom: 150%;
+    }
+    100%{
+        bottom: 50%
+    }
+}
+
+#flameFront1{
+    position: absolute;
+    transform: scale(0.15,0.15);
+    top: 19%;
+    left: -58%;
+    z-index: 10;
+    animation: 2s ease-in-out normal forwards infinite flameFrontAnim;
+    opacity: 1;
+}
+
+#flameFront2{
+    position: absolute;
+    transform: scale(0.15,0.15);
+    top: 19%;
+    left: -40%;
+    z-index: 10;
+    animation: 2s ease-in-out normal forwards infinite flameFrontAnim;
+    opacity: 1;
+}
+
+@keyframes flameFrontAnim{
+    0%{
+        top:19%;
+    }
+    50%{
+        top: 28%;
+    }
+    100%{
+        top: 19%;
+    }
+    
+}
+
+#speechBubble{
+    position: absolute;
+    opacity:0;
+    background-color: #EEE;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 15%;
+    height: 17%;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+    padding-top: 0.5%;
+    top: 20%;
+    left: 30%;
+    z-index: 10;
+    animation-name: speechBubbleAnim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 15s;
+    
+}
+#speechBubble div {
+    top:75%;
+}
+#speechBubble a {
+    left:33%;
+    top:62%;
+}
+
+@keyframes speechBubbleAnim {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

@@ -1,0 +1,451 @@
+html, body{
+    margin:0;
+    background-color:#EAEAFF;
+    height:100%;
+    overflow-y:hidden;
+}
+#container {
+    position:relative;
+    width:1280px;
+    height:720px;
+    margin:auto;
+}
+#container *{
+    position:absolute;
+}
+
+/* -- Baymax -- */
+#baymax {
+    position:relative;
+    left:35%;
+    top:30%;
+    width:30%;
+    height:58.46%;
+    animation: 5s ease-in-out 0s 1 normal forwards zoomIn;
+}
+#imgBaymax {
+    width:100%;
+}
+#flame0 {
+    left:29%;
+}
+#flame0, #flame1 {
+    width:25%;
+    bottom:-22.5%;
+    right:29%;
+}
+@keyframes zoomIn{
+    0%{
+        left:35%;
+        top:30%;
+        width:30%;
+        height:58.46%;
+    }
+    100%{
+        left:-10%;
+        top:-35%;
+        width:120%;
+        height:233.83%;
+    }
+}
+
+/* -- Story selection --  */
+#screen {
+    left:33.75%;
+    top:27.5%;
+    width:32.5%;
+    height:25%;
+    opacity:0;
+    border: 1px solid grey;
+    border-radius: 10px;
+    animation: 2s ease-in-out 5s 1 normal forwards screenAnim;
+}
+#element1, #element2, #element3, #element4 {
+    position:relative;
+    width:100%;
+    height:100%;
+    border: 1px solid grey;
+    border-radius: 25px;
+    background-color:rgb(150,200,250);
+    overflow:hidden;
+}
+#element1 *, #element2 *, #element3 *, #element4 * {
+    position:absolute;
+}
+#link1, #link2, #link3, #link4 {
+    width:45%;
+    height:45%;
+    opacity:0;
+    transition: width 0.3s, height 0.3s, left 0.3s, right 0.3s, top 0.3s, bottom 0.3s;
+}
+#link1 {
+    left:2.5%;
+    top:2.5%;
+    animation: 0.5s ease-out 7s 1 normal forwards fadeIn;
+}
+#link1:hover {
+    width:47.5%;
+    height:47.5%;
+    left:1.25%;
+    top:1.25%;
+}
+#link2 {
+    right:2.5%;
+    top:2.5%;
+    animation: 0.5s ease-out 7.5s 1 normal forwards fadeIn;
+}
+#link2:hover {
+    width:47.5%;
+    height:47.5%;
+    right:1.25%;
+    top:1.25%;
+}
+#link3 {
+    left:2.5%;
+    bottom:2.5%;
+    animation: 0.5s ease-out 8s 1 normal forwards fadeIn;
+}
+#link3:hover {
+    width:47.5%;
+    height:47.5%;
+    left:1.25%;
+    bottom:1.25%;
+}
+#link4 {
+    right:2.5%;
+    bottom:2.5%;
+    animation: 0.5s ease-out 8.5s 1 normal forwards fadeIn;
+}
+#link4:hover {
+    width:47.5%;
+    height:47.5%;
+    right:1.25%;
+    bottom:1.25%;
+}
+@keyframes screenAnim {
+    0%{
+        left:50%;
+        top:40%;
+        width:0%;
+        height:0%;
+        opacity:1;
+    }
+    50%{
+        left:33.75%;
+        top:40%;
+        width:32.5%;
+        height:0%;
+        opacity:1;
+    }
+    100%{
+        left:33.75%;
+        top:27.5%;
+        width:32.5%;
+        height:25%;
+        opacity:1;
+    }
+}
+@keyframes fadeIn {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        
+    }
+}  
+
+
+/* --- Tesla animation --- */
+#element1Sun {
+    width:30%;
+    top:-10%;
+    right:-10%;
+}
+#element1City {
+    width:150%;
+    bottom:-45%;
+}
+#element1Cloud {
+    width:40%;
+    top:20%;
+    left:100%;
+    animation: 10s linear -3s infinite normal none paused moveThroughFrame;
+}
+#element1Light {
+    width:30%;
+    bottom:10%;
+    left:100%;
+    animation: 2s linear -1s infinite normal none paused moveThroughFrame;
+}
+#element1Car {
+    width:50%;
+    height:18.5%;
+    bottom:5%;
+    left:10%;
+}
+#element1Tesla {
+    width:100%;
+}
+#element1Wheel1, #element1Wheel2 {
+    width:15%;
+    bottom:0;
+    animation: 0.5s linear 0s infinite normal forwards paused rotate;
+}
+#element1Wheel1 {
+    left:22.5%;
+}
+#element1Wheel2 {
+    right:21%;
+}
+#link1:hover #element1Wheel1, #link1:hover #element1Wheel2, #link1:hover #element1Cloud, #link1:hover #element1Light {
+    animation-play-state: running;
+}
+#element1Road {
+    width:100%;
+    height:10%;
+    bottom:0;
+    background: linear-gradient(#AAA, #555)
+}
+@keyframes rotate {
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes moveThroughFrame {
+    0%{
+        left:100%;
+    }
+    100%{
+        left:-50%;
+    }
+}
+
+
+/* -- Siri animation -- */
+#element2Sun {
+    width:30%;
+    top:-10%;
+    right:-10%;
+}
+#element2Cloud {
+    width:40%;
+    top:20%;
+    left:100%;
+    animation: 25s linear -3s infinite normal none paused moveThroughFrame;
+}
+#element2Sidewalk {
+    width:100%;
+    height:5%;
+    bottom:10%;
+    background-color:gray;
+}
+#element2Road {
+    width:100%;
+    height:10%;
+    bottom:0;
+    background-color:darkgray;
+}
+#element2Bench {
+    width:20%;
+    bottom:12%;
+    right:15%;
+}
+#element2Man {
+    width:45%;
+    bottom:11%;
+    right:7%;
+}
+#element2Phone {
+    width:0%;
+    height:0%;
+    bottom:30%;
+    right:30%;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, right 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+#element2iPhone {
+    width:100%;
+    height:100%;
+}
+#link2:hover #element2Cloud {
+    animation-play-state: running;
+}
+#link2:hover #element2Phone {
+    width:36%;
+    height:85%;
+    bottom:7.5%;
+    right:50%;
+}
+
+
+/* -- Smarthouse animation -- */
+#element3Cover {
+    width:100%;
+    height:100%;
+    opacity:0;
+    border-radius: 25px;
+    background-color:rgb(30,80,130);
+    animation: 5s linear -0.5s infinite normal forwards paused coverAnim;
+}
+#element3Sun {
+    width:20%;
+    left:40%;
+    top:5%;
+    animation: 5s linear -0.5s infinite normal forwards paused sunAnim;
+}
+#element3House {
+    width:80%;
+    left:10%;
+    bottom:0;
+}
+#link3:hover #element3Cover, #link3:hover #element3Sun {
+    animation-play-state: running;
+}
+@keyframes coverAnim {
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0.6;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@keyframes sunAnim {
+    0%{
+        left:40%;
+        top:5%;
+    }
+    15%{
+        left:93,615%;
+        top:12.22%;
+    }
+    30%{
+        left:117.175%;
+        top:32.825%;
+    }
+    40%{
+        left:117.175%;
+        top:100%;
+    }
+    60%{
+        left:-37.175%;
+        top:100%;
+    }
+    70%{
+        left:-37.175%;
+        top:32.825%;
+    }
+    85%{
+        left:-13,615%;
+        top:12.22%;
+    }
+    100%{
+        left:40%;
+        top:5%;
+    }
+}
+
+
+/* --- Drone animation --- */
+#element4DroneWithBox {
+    width:25%;
+    height:25%;
+    left:37.5%;
+    bottom:17%;
+    animation: 2s ease-in-out 0s infinite normal forwards paused droneHover;
+}
+#element4Drone {
+    width:100%;
+}
+#element4Box {
+    width:100%;
+    bottom:-70%;
+}
+#element4Grass {
+    width:100%;
+    height:45%;
+    bottom:0;
+    background: linear-gradient(#9D7,#5C7);
+}
+#element4House {
+    width:15%;
+    left:42.5%;
+    bottom:45%;
+}
+#element4LeftTree, #element4LeftTree1, #element4RightTree, #element4RightTree1 {
+    width:25%;
+    bottom:45%;
+    opacity:0;
+}
+#element4LeftTree {
+    left:30%;
+    animation: 4s cubic-bezier(.66,.17,.82,.3) -3.5s infinite normal forwards paused leftTree;
+}
+#element4LeftTree1 {
+    left:30%;
+    animation: 4s cubic-bezier(.66,.17,.82,.3) -1.5s infinite normal forwards paused leftTree;
+}
+#element4RightTree {
+    right:30%;
+    animation: 4s cubic-bezier(.66,.17,.82,.3) -2.5s infinite normal forwards paused rightTree;
+}
+#element4RightTree1 {
+    right:30%;
+    animation: 4s cubic-bezier(.66,.17,.82,.3) -0.5s infinite normal forwards paused rightTree;
+}
+#link4:hover #element4DroneWithBox, #link4:hover #element4LeftTree, #link4:hover #element4LeftTree1, #link4:hover #element4RightTree, #link4:hover #element4RightTree1 {
+    animation-play-state: running;
+}
+@keyframes droneHover {
+    0%{
+        bottom:17%;
+    }
+    50%{
+        bottom:19%;
+    }
+    100%{
+        bottom:17%;
+    }
+}
+@keyframes leftTree {
+    0%{
+        opacity:0;
+        width:25%;
+        left:30%;
+        bottom:45%;
+    }
+    50%{
+        opacity:1;
+    }
+    95%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        width:60%;
+        left:-40%;
+        bottom:-10%;
+    }
+}
+@keyframes rightTree {
+    0%{
+        opacity:0;
+        width:25%;
+        right:30%;
+        bottom:45%;
+    }
+    50%{
+        opacity:1;
+    }
+    95%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+        width:60%;
+        right:-40%;
+        bottom:-10%;
+    }
+}

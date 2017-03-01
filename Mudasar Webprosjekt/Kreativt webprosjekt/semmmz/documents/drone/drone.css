@@ -1,0 +1,268 @@
+#drone{
+    width: 200px;
+    height: 200px;
+}
+
+#stock-shelf {
+    height: 38%;
+    width: 20%;
+    bottom: 0%;
+    right: 78%;
+}
+
+#conveyor-belts {
+    transform: scale(4,4);
+    bottom: 3%;
+    right: 10%;
+}
+
+#rail {
+    top:25%;
+    background-color: #C0C0C0;
+    width: 100%;
+    height: 2%;
+    z-index: 10;
+    bottom: 50%;
+    left: 0%;
+}
+
+#claw {
+    height: 30%;
+    width: 12%;
+    bottom: 44%;
+    right: 61%;
+    animation-name: clawAnim;
+    animation-iteration-count: 1;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-delay:3s;
+}
+@keyframes clawAnim{
+    0%{
+        bottom: 44%;
+        right: 61%; 
+    }
+    14%{
+        bottom:20%;
+        right: 61%;
+    }
+    28%{
+      bottom:44%;
+        right: 61%;
+    }
+    57%{
+     bottom:44%;
+        right:19%;
+    }
+    70%{
+      bottom:8%;
+        right:19%;
+    }
+    84%{
+        bottom:44%;
+        right:19%;
+    }
+    100%{
+        bottom:44%;
+        right:61%
+    }
+}
+
+
+#package-pile {
+    transform: scale(4,4);
+    top: 89%;
+    right: 60%;
+}
+
+#package {
+    transform: scale(4,4);
+    bottom:22%;
+    right: 64%;
+    animation-name:package;
+    animation-iteration-count: 1;
+    animation-duration:15s;
+    animation-fill-mode:forwards;
+    animation-delay:3s;
+}
+
+@keyframes package{
+    0%{
+       bottom:22%;
+        right:64%;
+    }
+    14%{
+        bottom:22%;
+        right:64%;
+    }
+    28%{    
+        bottom:46%;
+        right:64%;
+    }
+    57%{
+        bottom:46%;
+        right:22%
+    }
+    70%{
+        bottom:10%;
+        right:22%;
+        opacity:1;
+    }
+    71% {
+        bottom:10%;
+        right:22%;
+        opacity:0;
+    }
+    84%{
+        bottom:10%;
+        right:-7%;
+        opacity:0;
+    }
+    85% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#package1 {
+    transform: scale(4,4);
+    bottom:10%;
+    right:22%;
+    opacity:0;
+    animation-name:packageOutOfScreen;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration:4.6s;
+    animation-fill-mode:forwards;
+    animation-delay:13.5s;
+}
+@keyframes packageOutOfScreen {
+    0% {
+        bottom:10%;
+        right:22%;
+        opacity:1;
+    }
+    100% {
+        bottom:10%;
+        right:-7%;
+        opacity:1;
+    }
+}
+
+#lamp {
+    right: 50%;
+    height: 15%;
+    
+}
+
+#baymax {
+    width:10%;
+    bottom: 78%;
+    right:90%;
+    animation-name: baymaxAnim;
+    animation-duration:5s;
+    animation-fill-mode:forwards;
+    animation-delay:15s;
+
+}
+@keyframes baymaxAnim{
+    0%{
+        bottom:78%;
+        right:90%;
+    }   
+    100%{
+        bottom:78%;
+        right:15%;
+    }
+}
+#flames {
+    width:2.5%;
+    bottom: 74.5%;
+    right:94.3%;
+    animation-name:flames;
+    animation-fill-mode:forwards;
+    animation-duration:5s;
+    animation-delay: 15s;
+}
+
+#speechBubble {
+    opacity:1;
+    background-color: #EEE;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 13%;
+    right: 78%;
+    height: 15%;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+    padding-top: 0.5%;
+    animation-name:speechBubble;
+    animation-duration:12s;
+    animation-fill-mode:forwards;
+}
+@keyframes speechBubble{
+    0% {
+        opacity:0;
+    }
+    10% {
+        opacity:1;
+    }
+    90% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+#boxes {
+    right: 45%;
+    transform: scale(4,4);
+    bottom: 8%;
+}
+
+
+@keyframes flames{
+   0%{
+        bottom:74.5%;
+        right:94.3%;
+    }   
+    100%{
+        bottom:74.5%;
+        right: 19.3%;
+    
+    }
+}
+
+#speechBubble2 {
+    opacity:0;
+    width: 13%;
+    top:2%;
+    right: 3%;
+    height: 4%;
+    animation-name: speechBubble2;
+    animation-duration: 1s;
+    animation-delay: 21s;
+    animation-fill-mode: forwards; 
+}
+#speechBubble2 div {
+    width:100%;
+    height:100%;
+    background-color: #EEE;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px;
+    animation-timing-function: 
+}
+@keyframes speechBubble2{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

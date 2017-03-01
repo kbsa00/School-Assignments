@@ -1,0 +1,565 @@
+#city {
+    width: 100%;
+    top: -9%;
+    left: 100%;
+    transform: rotate(-0.9deg);
+    animation: cityAnimation 80s linear 0s;
+        
+}
+
+#sun {
+    height: 25%;
+    left: 80%;
+    top: 5%;
+}
+#cloud {
+    width: 27%;
+    top: 5%;
+    left: 100%;
+    z-index: 2;
+    animation: cloudAnimation 20s linear 0s;
+    animation-iteration-count: infinite;
+}
+#cloud1 {
+    width: 7%;
+    top: 30%;
+    left: 100%;
+    animation: cloudAnimation 50s linear 0s;
+    animation-iteration-count: infinite;
+}
+#cloud2 {
+    width: 20%;
+    top: 30%;
+    left: 100%;
+    animation: cloudAnimation 27s linear 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes cloudAnimation {
+    0%{
+        left:  100%;
+    }
+    100%{
+        left: -27%;
+    }
+}
+@keyframes cityAnimation {
+    0%{
+        left: 100%;
+    }
+    59%{
+        left: -20%;
+    }
+    74%{
+        left: -20%;
+    }
+    100%{
+        left: -110%;
+    }
+}
+
+#baymaxInCorner {
+    left: -20%;
+    height: 20%;
+    width: 20%;
+    top:0;
+    z-index: 3;
+    animation: baymaxInCornerAnimation 80s linear 1s forwards;
+}
+#baymax {
+    width: 70%;
+    transform: rotate(85deg);
+    left: 20%;
+    z-index: 2;
+}
+#flame {
+    height: 40%;
+    transform: rotate(90deg);
+    top: 40%;
+    left: 2%;       
+}
+@keyframes baymaxInCornerAnimation {
+    0%{
+        left: -20%;
+        top: 0%;
+    }
+    1.2%{
+        left: 2%;
+        top: 0%;
+    }
+    55%{
+        left: 2%;
+        transform: rotate(0deg);
+        top: 0%;
+        
+    }
+    58.3%{
+        left: 2%;
+        transform: rotate(-90deg);
+        top: 5%;
+    }
+    72.5%{
+        left: 2%;
+        transform: rotate(-90deg);
+        top: 5%;
+    }
+    83%{
+        left: 2%;
+        transform: rotate(0deg);
+        top: 0%;
+    }
+    89%{
+        left: 2%;
+        height: 20%;
+        width: 20%;
+        transform: rotate(0deg);
+        top: 0%;
+    }
+    96%{
+        left: 35%;
+        top: 30%;
+        transform: rotaterotate(0deg);
+        height: 40%;
+        width: 40%;
+    }
+    100%{
+        left: 25%;
+        top: 37%;
+        width: 40%;
+        height: 40%;
+    }
+}
+
+#chargingStation {
+    height: 57%;
+    bottom: 5%;
+    right: -90%;
+    z-index: 2;
+    animation: chargingStationAnimation 23s linear 43s;
+}
+@keyframes chargingStationAnimation {
+    0%{
+        right: -90%;
+    }
+    20%{
+        right: 5%;
+    }
+    70%{
+        right: 5%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+#tesla{
+    width:30%;
+    height:20%;
+    top: 79%;
+    z-index: 5;
+    left: -32%;
+    visibility: visible;
+    animation: teslaAnimation 85s ease 0s;
+        
+}
+#tesla1{
+    width:30%;
+    height:20%;
+    top: 79%;
+    z-index: 5;
+    left: 30%;
+    visibility: hidden;
+    animation: tesla1Animation 20s linear 59.1s;
+}
+@keyframes tesla1Animation {
+    0%{
+        visibility: visible;
+        left: 30%;
+    }
+    60%{
+        left: 30%;
+    }
+    78%{
+        left: 30%;
+    }
+    100%{
+        visibility: visible;
+        left: 100%;
+    }
+}
+#wheel3{
+    height: 43%;
+    top: 46%;
+    z-index: 2;
+    left: 86%;
+    opacity: 1;
+    animation: wheelRotation1 0.5s linear 0s;
+    animation-iteration-count: 180;
+}
+#wheel4{
+    height: 43%;
+    top: 46%;
+    z-index: 3;
+    left: 41.5%;
+    opacity: 1;
+    animation: wheelRotation1 0.5s linear 0s;
+    z-index: 2;
+    animation-iteration-count: 180;
+}
+@keyframes wheelRotation1 {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+@keyframes teslaAnimation {
+    0%{
+        left: -32%;
+        visibility: visible;
+    }
+    10%{
+        left: 0%;
+        visibility: visible;
+    }
+    15%{
+        left: 0%;
+        visibility: visible;
+    }
+    43%{
+        left: 0%;
+        visibility: visible;
+    }
+    60%{
+        left: 30%;
+        visibility: visible;
+    }
+    70%{
+        left: 30%;
+        visibility: hidden;
+    }
+    100%{
+        left: 30%;
+        visibility: hidden;
+    }
+
+}
+#teslaWithoutWheels {
+    left: 17%;
+    height: 100%;
+    bottom: 0%;
+    z-index: 4;
+}
+#wheel1{
+    height: 43%;
+    top: 46%;
+    z-index: 2;
+    left: 86%;
+    opacity: 1;
+    animation: wheelRotation 0.5s linear 0s;
+    animation-iteration-count: 96;
+}
+#wheel2{
+    height: 43%;
+    top: 46%;
+    z-index: 3;
+    left: 41.5%;
+    opacity: 1;
+    animation: wheelRotation 0.5s linear 0s;
+    z-index: 2;
+    animation-iteration-count: 96;
+}
+@keyframes wheelRotation{
+    0%{
+        transform: rotate(0deg)  
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+/* Road, road-stripes and streetlights */
+#road {
+    width: 100%;
+    height: 10%;
+    bottom: -1%;
+    z-index: 1;
+    background: linear-gradient(#bbb,#555);
+}
+#whiteLine1 {
+    bottom: 5%;
+    left: 100%;
+    height: 1%;
+    width: 15%;
+    z-index: 4;
+    background-color: azure;
+    animation: whiteLineAnimation 1s linear 0s;
+    animation-iteration-count: 43;
+}
+#whiteLine2 {
+    bottom: 5%;
+    left: 100%;
+    height: 1%;
+    width: 15%;
+    z-index: 4;
+    background-color: azure;
+    animation: whiteLineAnimation
+        1s linear 0.5s;
+    animation-iteration-count: 43;
+}
+#whiteLine3 {
+    bottom: 5%;
+    left: 100%;
+    height: 1%;
+    width: 15%;
+    z-index: 4;
+    background-color: azure;
+    animation: whiteLineAnimation
+        1s linear 1s;
+    animation-iteration-count: 43;
+}
+#whiteLine4 {
+    bottom: 5%;
+    left: 100%;
+    height: 1%;
+    width: 15%;
+    z-index: 4;
+    background-color: azure;
+    animation: whiteLineAnimation
+        1s linear 67s;
+    animation-iteration-count: infinite;
+}
+#whiteLine5 {
+    bottom: 5%;
+    left: 100%;
+    height: 1%;
+    width: 15%;
+    z-index: 4;
+    background-color: azure;
+    animation: whiteLineAnimation
+        1s linear 67.5s;
+    animation-iteration-count: infinite;
+}
+#whiteLine6 {
+    bottom: 5%;
+    left: 100%;
+    height: 1%;
+    width: 15%;
+    z-index: 4;
+    background-color: azure;
+    animation: whiteLineAnimation
+        1s linear 68s;
+    animation-iteration-count: infinite;
+}
+@keyframes whiteLineAnimation {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -30%;
+    }
+}
+#streetLight, #streetLight1, #streetLight2, #streetLight3, #streetLight4, #streetLight5, #streetLight6, #streetLight7 {
+    height: 40%;
+    left: 100%;
+    top: 53%;
+    z-index: 2;
+}
+#streetLight {
+    animation: streetLightAnimation1 1s linear 0s;
+    animation-iteration-count: 43;
+}
+#streetLight1 {
+    animation: streetLightAnimation1 1s linear 0.25s;
+    animation-iteration-count: 43;
+}
+#streetLight2 {
+    animation: streetLightAnimation1 1s linear 0.5s;
+    animation-iteration-count: 43;
+}
+#streetLight3 {
+    animation: streetLightAnimation1 1s linear 0.75s;
+    animation-iteration-count: 43;
+}
+#streetLight4 {
+    animation: streetLightAnimation1 1s linear 67s;
+    animation-iteration-count: infinite;
+}
+#streetLight5 {
+    animation: streetLightAnimation1 1s linear 67.25s;
+    animation-iteration-count: infinite;
+}
+#streetLight6 {
+    animation: streetLightAnimation1 1s linear 67.5s;
+    animation-iteration-count: infinite;
+}
+#streetLight7 {
+    animation: streetLightAnimation1 1s linear 67.75s;
+    animation-iteration-count: infinite;
+}
+@keyframes streetLightAnimation1{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -30%;
+    }
+}
+
+#speechBubble1, #speechBubble2, #speechBubble3, #speechBubble4, #speechBubble5, #speechBubble6, #speechBubble7, #speechBubble8, #speechBubble9, #speechBubble10, #speechBubble11, #speechBubble12 {
+    text-align: center;
+    z-index:50;
+    font-size: 14px;
+    background-color: #EEE;
+    font-family: sans-serif;
+    opacity:0;
+    border-radius: 50%;
+}
+#speechBubble1 {
+    font-weight: bold;
+    height: 5%;
+    width: 15%;
+    padding: 2.4%;
+    left: 20%;
+    top: 3%;
+    animation: speechAnimation 4s linear 2.5s;
+}
+#speechBubble2 {
+    font-weight: bold;
+    height: 7%;
+    width: 15%;
+    padding: 2.7%;
+    left: 20%;
+    top: 3%;
+    animation: speechAnimation 5s linear 7.5s;
+} 
+#speechBubble3 {
+    font-weight: bold;
+    height: 3%;
+    width: 15%;
+    padding: 2.7%;
+    top: 70%;
+    animation: speechAnimation 3s linear 14s; 
+}
+#speechBubble4 {
+    font-style: italic;
+    height: 2%;
+    width: 7%;
+    padding: 2%;
+    border-radius: 10%;
+    top: 80%;
+    left: 32%;
+    animation: speechAnimation 2s linear 18s;
+}
+#speechBubble5 {
+    font-weight: bold;
+    height: 5%;
+    width: 15%;
+    padding: 2.4%;
+    left: 20%;
+    top: 3%;
+    animation: speechAnimation 4s linear 22s;
+}
+#speechBubble6 {
+    font-style: italic;
+    height: 9%;
+    width: 8%;
+    padding-top:2%;
+    border-radius: 10%;
+    top: 80%;
+    left: 32%;
+    animation: speechAnimation 3s linear 28s;
+}
+#speechBubble7{
+    font-style: italic;
+    height: 7%;
+    width: 8%;
+    padding: 2%;
+    border-radius: 10%;
+    top: 80%;
+    left: 32%;
+    animation: speechAnimation 3s linear 31s;
+}
+#speechBubble8{
+    font-weight: bold;
+    height: 4%;
+    width: 10%;
+    padding: 2.7%;
+    top: 70%;
+    left: 2%;
+    animation: speechAnimation 2s linear 34s;
+}
+#speechBubble9{
+    font-style: italic;
+    height: 7%;
+    width: 8%;
+    padding: 2%;
+    border-radius: 10%;
+    top: 80%;
+    left: 62%;
+    animation: speechAnimation 3s linear 54s;
+}
+#speechBubble10{
+    font-weight: bold;
+    height: 3%;
+    width: 10%;
+    padding: 2.7%;
+    top: 70%;
+    left: 33%;
+    animation: speechAnimation 2s linear 58s;
+}
+#speechBubble11 {
+    font-weight: bold;
+    height: 4%;
+    width: 15%;
+    padding: 2.7%;
+    left: 20%;
+    top: 3%;
+    animation: speechAnimation 3s linear 68.5s;
+}
+#speechBubble12 {
+    font-weight: bold;
+    height: 7%;
+    width: 15%;
+    padding: 2.7%;
+    border-radius: 50%;
+    left: 60%;
+    top: 37%;
+    animation: lastSpeechAnimation 4s linear 81.5s forwards;
+}
+#speechBubble12 a {
+    left:37%;
+    top:30%;
+}
+@keyframes lastSpeechAnimation{
+     0%{
+        opacity:0;
+    }
+    25%{
+        opacity:1;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes speechAnimation{
+    0%{
+        opacity:0;
+    }
+    10%{
+        opacity:1;
+    }
+    90%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+
+
+#line2 {
+    top: 44%;
+}
+   

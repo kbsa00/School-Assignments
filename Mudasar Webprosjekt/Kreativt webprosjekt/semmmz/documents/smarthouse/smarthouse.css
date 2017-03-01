@@ -1,0 +1,342 @@
+/* Static background pictures */
+#houseContainer {
+    width: 85%;
+    height: 85%;
+    bottom: 0%;
+    left: 7.5%;  
+}
+#housePicture {
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+}
+#smoke {
+    width: 12%;
+    height: 18%;
+    left: 5%;
+}
+
+
+/* Baymax flying in*/
+#BaymaxImg {
+    height: 83%;
+    right: 0%;
+    top: 0%;
+}
+#flameleft {
+    width: 20%;
+    bottom: 0;
+    left: 39%;
+}
+#flameright {
+    width: 20%;
+    bottom: 0;
+    left: 55%
+}
+#BaymaxFlyingIn {
+    width: 15%;
+    height: 30%;
+    animation: flyingIn 3s ease-out forwards;
+    top: -30%;
+    left: 20%;
+}
+@keyframes flyingIn{
+    0%{
+        top: -30%;
+    }
+    100%{
+        top: 0%;
+    }
+}
+
+
+/* Make alarm ring*/
+#alarm {
+    width: 10%;
+    bottom: 23%;
+    left: 1.6%;
+    opacity: 0;
+    animation: fadeInOut 0.5s linear 15s 8;  
+}
+@keyframes fadeInOut{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+/* Fade light inside house*/
+#darkHouse {
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+    opacity: 0.7;
+    animation: lightUp 0.1s linear 17s forwards;
+}
+@keyframes lightUp{
+    0%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* Lamp */
+#lampOff {
+    width: 10%;
+    top: 12%;
+    left: 45%;
+    opacity: 1;
+    animation: makeInvisible 0.1s linear 17s forwards;
+}
+#lampOn {
+    width: 10%;
+    top: 12%;
+    left: 45%;
+    opacity: 0;
+    animation: makeVisible 0.1s linear 17.1s forwards;
+}
+
+
+
+
+/* The man in bed*/
+#manInBed {
+    width: 15%;
+    bottom: 5%;
+    left: 5%;
+    opacity: 1;
+    animation: makeInvisible 0.3s linear 34s forwards;
+}
+
+
+@keyframes makeInvisible{
+    0%{
+        opacity: 1;}
+    
+    100%{
+        opacity: 0;}
+}
+
+
+@keyframes makeVisible{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* The man in weelchair*/
+#manInWeelchair {
+    width: 12%;
+    bottom: 0%;
+    left: 5%;
+    opacity: 0;
+    animation: getCofeeAndGoOut 18s linear 34.3s;
+    animation-fill-mode: forwards
+    
+}
+
+@keyframes getCofeeAndGoOut{
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+        left: 5%;
+    }
+    30%{
+        left: 65%;
+    }
+    78%{
+        transform: scaleX(1);
+    }
+    80%{
+        left: 65%;
+        transform: scaleX(-1);
+    }
+    100%{
+        opacity: 1;
+        left: 45%;
+        transform: scaleX(-1);
+    }
+}
+
+
+
+
+
+
+/* Speach bobles */
+.speachBobles {
+    text-align: center;
+    background-color: #EEE;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 0.5%;
+    opacity: 0;
+}
+
+#speachBobleLine1 {
+    top: 10%;
+}
+
+#speachBobleLine2 {
+    bottom: 10%;
+}
+
+#BaymaxBoble1 {
+    left: 35%;
+    top: 2%;
+    animation: fadeInOut 5s linear 3s forwards;
+}
+
+#BaymaxBoble2 {
+    left: 35%;
+    top: 2%;
+    animation: fadeInOut 7s linear 9s forwards;
+    width: 28.5%;
+    height: 5.5%;
+    opacity: 0;
+}
+
+#AIBoble1 {
+    left: 7%;
+    bottom: 35%;
+    animation: fadeInOut 4s linear 20s forwards;
+}
+
+#ManBoble1 {
+    left: 10%;
+    bottom: 18%;
+    font-weight: bold;
+    font-style: normal;
+    animation: fadeInOut 4s linear 22s forwards;
+}
+
+#AIBoble2 {
+    left: 7%;
+    bottom: 35%;
+    animation: fadeInOut 4s linear 25s forwards;
+}
+
+#ManBoble2 {
+    left: 10%;
+    bottom: 18%;
+    font-weight: bold;
+    font-style: normal;
+    animation: fadeInOut 2s linear 27s forwards;
+}
+
+#ManBoble3 {
+    left: 10%;
+    bottom: 18%;
+    font-weight: bold;
+    font-style: normal;
+    animation: fadeInOut 4s linear 30s forwards;
+}
+
+#AIBoble3 {
+    left: 53%;
+    bottom: 35%;
+    animation: fadeInOut 4s linear 36s forwards;
+}
+
+#AIBoble4 {
+    left: 42%;
+    bottom: 35%;
+    animation: fadeInOut 3s linear 43s forwards;
+}
+
+#ManBoble4 {
+    left: 76%;
+    bottom: 23%;
+    font-weight: bold;
+    font-style: normal;
+    animation: fadeInOut 4s linear 46s forwards;
+}
+
+#BaymaxBoble3 {
+    left: 35%;
+    top: 2%;
+    animation: makeVisible 2s linear 49s forwards; 
+}
+
+
+
+/* Coffee is finished blinking*/
+#CoffeeIsFinished {
+    right: 23.5%;
+    bottom: 17%;
+    width: 6%;
+    opacity: 0;
+    animation: fadeInOut 4s linear 36s forwards;
+}
+
+
+
+/* Door */
+#doorLink {
+    width: 6%;
+    height: 0%;
+    bottom: 2%;
+    left: 47%;
+    animation: makeDoorVisible 0.1s linear 49s forwards;
+}
+
+@keyframes makeDoorVisible{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 30%;
+    }
+}
+
+#doorBorder {
+    border: 5px solid red;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: makeVisible 0.1s linear 49s forwards;
+}
+
+#door {
+    bottom: -0.8%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#arrowContainer {
+    width: 5%;
+    height: 10%;
+    left: 47%;
+    top: 7%;
+    opacity: 0;
+    animation: makeVisible 1s ease-in-out 49s infinite;
+}
+
+#arrowImg {
+    width: 100%;
+}

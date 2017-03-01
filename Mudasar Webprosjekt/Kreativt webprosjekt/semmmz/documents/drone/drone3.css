@@ -1,0 +1,261 @@
+#drone{
+    position: absolute;
+    transform: scale(0.1,0.1);
+    top: -50%;
+    left: -14%;
+    z-index: 11;
+    animation: 3s ease-in-out infinite normal forwards droneHover;
+}
+
+@keyframes droneHover{
+    0%{
+        top:-50%;
+    }
+    50%{
+        top:-65%;
+    }
+    100%{
+        top:-50%;
+    }
+}
+
+#package{
+    position: absolute;
+    transform: scale(6,6);
+    top: 65%;
+    left: 50%;
+    z-index: 10;
+    animation: 3s ease-in-out infinite normal forwards packageHover
+}
+
+@keyframes packageHover{
+    0%{
+        top: 65%;
+    }
+    50%{
+        top: 50%;
+    }
+    100%{
+        top: 65%;
+    }
+}
+
+#ground{
+    position: absolute;
+    background-color: #78AB46;
+    width:1280px;
+    height:400px;
+    bottom: 0%;
+    z-index: 1;
+}
+
+#sun{
+    position: absolute;
+    transform: scale(0.3,0.3);
+    top: -20%;
+    left:50%;
+    z-index: 1;
+}
+
+#cloud1{
+    position: absolute;
+    transform: scale(0.6,0.6);
+    left: -5%
+}
+
+#cloud2{
+    position: absolute;
+    transform: scale(0.4,0.4);
+    left:75%
+}
+
+#cloud3{
+    position: absolute;
+    transform: scale(0.5,0.5);
+    left:30%;
+    bottom: 75%;
+}
+
+#house{
+    position: absolute;
+    transform: scale(0.05,0.05);
+    bottom: 0%;
+    left:-10%;
+    animation: 30s ease-in-out 2s normal forwards houseAnim;
+    z-index: 2;
+}
+
+@keyframes houseAnim{
+    0%{
+       transform: scale(0.05,0.05);
+    }
+    100%{
+        transform: scale(0.5, 0.5);
+    }
+}
+
+.tree{
+    position: absolute;
+    height: 30%;
+    bottom: 50%;
+    opacity: 0;
+    z-index: 2;
+}
+
+#tree1{
+    left: 55%;
+    animation: 4s ease-in-out 2s 3 normal forwards treeAnimRight;
+}
+
+#tree2{
+    left: 55%;
+    animation: 4s ease-in-out 6s 3 normal forwards treeAnimRight;
+}
+
+#tree3{
+    left: 25%;
+    animation: 4s ease-in-out 4s 3 normal forwards treeAnimLeft;
+}
+
+#tree4{
+    left: 25%;
+    animation: 4s ease-in-out 8s 3 normal forwards treeAnimLeft;
+}
+
+@keyframes treeAnimLeft{
+    0%{
+        opacity: 0;
+        height: 30%;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        bottom: -100%;
+        left: -90%;
+        height: 90%;
+    }
+}
+
+@keyframes treeAnimRight{
+    0%{
+        opacity: 0;
+        height: 30%;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        bottom: -100%;
+        left: 145%;
+        height: 90%;
+    }
+}
+
+#baymaxFront{
+    position: absolute;
+    height: 80%;
+    top:0%; 
+    left: 0%;
+    z-index: 10;
+    animation: 2s ease-in-out normal forwards infinite baymaxFrontAnim;
+}
+
+@keyframes baymaxFrontAnim{
+    0%{
+        top:0%;
+    }
+    50%{
+        top:10%;
+    }
+    100%{
+        top:0%;
+    }
+}
+
+#baymaxDiv{
+    position: absolute;
+    height:25%;
+    width: 10%;
+    z-index: 10;
+    bottom: 150%;
+    left: 45%;
+    animation: 5s ease-in-out 20s normal forwards baymaxDivAnim;
+}
+
+/*Move baymax animation*/
+@keyframes baymaxDivAnim{
+    0%{
+        bottom: 150%;
+    }
+    100%{
+        bottom: 60%
+    }
+}
+
+#flameFront1{
+    position: absolute;
+    transform: scale(0.15,0.15);
+    top: 19%;
+    left: -58%;
+    z-index: 10;
+    animation: 2s ease-in-out normal forwards infinite flameFrontAnim;
+}
+
+#flameFront2{
+    position: absolute;
+    transform: scale(0.15,0.15);
+    top: 19%;
+    left: -40%;
+    z-index: 10;
+    animation: 2s ease-in-out normal forwards infinite flameFrontAnim;
+}
+
+@keyframes flameFrontAnim{
+    0%{
+        top:19%;
+    }
+    50%{
+        top: 28%;
+    }
+    100%{
+        top: 19%;
+    }
+    
+}
+
+#speechBubble{
+    position: absolute;
+    opacity:0;
+    background-color: #EEE;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 15%;
+    height: 7%;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+    padding-top: 0.5%;
+    top: 20%;
+    left: 30%;
+    z-index: 10;
+    animation-name: speechBubbleAnim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 27s;
+}
+#speechBubble a {
+    left:7%;
+    top:30%;
+}
+
+@keyframes speechBubbleAnim {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

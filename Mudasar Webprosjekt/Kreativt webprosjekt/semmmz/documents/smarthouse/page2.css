@@ -1,0 +1,349 @@
+/* General rool for objects inside container */
+#container * {
+    position: absolute;
+}
+
+
+/* Zoom house */
+#houseOutsideContainer {
+    width: 85%;
+    height: 85%;
+    bottom: 0%;
+    left: 7.5%;
+    animation: zoomOutHouse 2s linear 1.5s forwards;
+}
+
+@keyframes zoomOutHouse{
+    0%{
+        width: 85%;
+        height: 85%;
+        bottom: 0%;
+    }
+    100%{
+        width: 50%;
+        height: 50%;
+        bottom: 20%;
+        left: 30%;
+    }
+}
+
+#house {
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+}
+
+#smoke {
+    width: 12%;
+    height: 18%;
+    left: -2%;
+    top: -14%;
+}
+
+#manOnHouse {
+    width: 13%;
+    bottom: -0.278%;
+    left: 43.42%;
+    transform: scaleX(-1);
+    opacity: 1;
+    animation: makeInvisible 0.1s linear 5s forwards;
+}
+
+@keyframes makeInvisible{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+/* Man going to car*/
+#manContainer {
+    width: 7.1%;
+    height: 9%;
+    left: 51%;
+    bottom: 19.2%;
+    opacity: 0;
+    animation: goToCar 15s ease-in-out 5s forwards;
+    transform: scaleX(-1);
+
+}
+
+#man {
+    width: 90%;
+    bottom: 10%;
+}
+
+@keyframes goToCar{
+    0%{
+        transform: scaleX(-1);
+        bottom: 19.2%;
+        left: 51%;
+        opacity: 1;
+        
+    }
+    20%{
+        bottom: 8.5%;
+        left: 43%;
+        transform: scaleX(-1);
+        opacity: 1;
+    }
+    21%{
+        transform: scaleX(1);
+        bottom: 8.5%;
+        left: 43%;
+        opacity: 1;
+    }
+    75%{
+        transform: scaleX(1);
+        bottom: 8.5%;
+        left: 43%;
+        opacity: 1;
+    }
+    100%{
+        transform: scaleX(1);
+        bottom: 8.5%;
+        left: 153%;
+        opacity: 1;
+    }
+}
+
+
+/* Road */
+#road {
+    width: 100%;
+    height: 0%;
+    bottom: 0%;
+    background: linear-gradient(#bbb,#555);
+    animation: displayRoad 2s linear 1.5s forwards;
+}
+
+@keyframes displayRoad{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 20%;
+    }
+}
+
+
+
+
+
+/* Car */
+#car {
+    width: 40%;
+    height: 20%;
+    bottom:3%;
+    left: -40%;
+    animation: moveCar 15s ease-in-out 5s forwards;
+}
+
+@keyframes moveCar{
+    0%{
+        left: -40%;
+        bottom: 3%;
+    }
+    25%{
+        left: 30%;
+        bottom: 3%;
+    }
+    75%{
+        left: 30%;        
+        bottom: 3%;
+    }
+    100%{
+        left: 140%;
+        bottom: 3%;
+    }
+}
+
+#tesla {
+    width: 100%;
+    bottom: 0%;
+}
+
+#weel1 {
+    left: 22.7%;
+    bottom: 11%;
+    width: 15%;
+    animation: rotateWeel 15s ease-in-out 5s forwards;
+}
+
+#weel2 {
+    left: 64%;
+    bottom: 11%;
+    width: 15%;
+    transform: rotate(200deg);
+    animation: rotateWeel 15s ease-in-out 5s forwards;
+}
+
+@keyframes rotateWeel{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(800deg);
+    }
+    75%{
+        transform: rotate(800deg);
+    }
+    100%{
+        transform: rotate(1800deg);
+    }
+}
+
+
+
+
+/* Speach bobles */
+.speachBoble {
+    text-align: center;
+    background-color: #EEE;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 0.5%;
+    opacity: 0;
+}
+
+#CarBoble1 {
+    bottom: 20%;
+    left: 60%;
+    animation: fadeInOut 4s ease-in-out 10s forwards;
+    height: 5%;
+    width: 18%;
+}
+
+#ManInCarBoble1 {
+    font-style: normal;
+    font-weight: bold;
+    left: 35%;
+    bottom: 25%;
+    animation: fadeInOut 4s ease-in-out 12s forwards;
+}
+
+#baymaxBoble1 {
+    left: 48%;
+    top: 63%;
+    animation: makeVisible 2s ease-in-out 22s forwards;
+    width: 22%;
+    height: 5%;
+}
+#link {
+    left: 48.6%;
+    top: 66.3%;
+    width: 5.7%;
+    height: 3%;
+    opacity: 0;
+    padding: 0%;
+    animation: makeVisible 2s ease-in-out 22s forwards;
+}
+
+#speachBobleLine1 {
+    top: 10%;
+}
+
+#speachBobleLine2 {
+    bottom: 10%;
+}
+
+#speachBobleLineWithLink {
+    bottom: 10%;
+    right: 10%;
+}
+
+@keyframes makeVisible{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+/* Baymax lift up fromhouse*/
+#baymaxFlyingUpContainer {
+    width: 15%;
+    height: 30%;
+    left: 30%;
+    top: 0%;
+    animation: baymaxFlyingFromRoof 20s ease-in-out 1.5s forwards;
+    z-index: 0;
+}
+
+@keyframes baymaxFlyingFromRoof{
+    0%{
+        left: 30%;
+    }
+    10%{
+        top: 0%;
+    }
+    15%{
+        left: 10%;
+        top: 10%;
+    }
+    85%{
+        left: 10%;
+        top: 10%;
+        z-index: 10;
+    }
+    100%{
+        left: 35%;
+        top: 65.5%;
+        z-index: 10;
+    }
+}
+
+
+#baymax {
+    height: 83%;
+    right: 0%;
+    top: 0%;
+}
+
+#leftFlame {
+    width: 20%;
+    bottom: 0;
+    left: 39%;
+    opacity: 1;
+    animation: makeInvisible 0.1s linear 22s forwards;
+}
+
+#rightFlame {
+    width: 20%;
+    bottom: 0;
+    left: 55%;
+    opacity: 1;
+    animation: makeInvisible 0.1s linear 22s forwards;
+}
+
+#tekstInLink {
+    left: 0%;
+    height: 100%;
+    padding: 0;
+    width: 90;
+}
