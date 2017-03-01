@@ -4,7 +4,7 @@ import java.util.Collections;
 /**
  * Couple of assigments for myself that i'm currently working with on Mooc.fi
  * 
- * @author (your name) 
+ * @author (Khalid) 
  * @version (a version number or a date)
  */
 public class ArrayListMethods
