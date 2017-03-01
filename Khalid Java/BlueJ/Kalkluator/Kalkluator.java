@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 /**
- * Write a description of class Kalkluator here.
+ * Just a simple class where you've got methods that can excute some calculations 
  * 
  * @author (KBSA) 
  * @version (a version number or a date)
