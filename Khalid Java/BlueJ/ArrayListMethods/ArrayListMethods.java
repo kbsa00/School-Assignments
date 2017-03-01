@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
 /**
- * Write a description of class Week3 here.
+ * Couple of assigments for myself that i'm currently working with on Mooc.fi
  * 
  * @author (your name) 
  * @version (a version number or a date)
