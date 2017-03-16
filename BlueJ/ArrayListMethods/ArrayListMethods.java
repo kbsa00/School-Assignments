@@ -12,7 +12,7 @@ public class ArrayListMethods
     private ArrayList<String> brotherslist;
     private ArrayList<String> teachers; 
     private ArrayList<String> members;
-    
+    private ArrayList<String> students;
     
     public void RemoveLast()
     {
@@ -28,7 +28,6 @@ public class ArrayListMethods
         System.out.println("Here's the list of the brothers");
         for(String liste : brotherslist)
         {
-            
             System.out.println(liste);
         }
         String answer;
@@ -57,15 +56,19 @@ public class ArrayListMethods
         teachers.add("Stein");
         teachers.add("Petter");
         teachers.add("Hasse");
+        teachers.add("Øystein");
+        teachers.add("Åse"); 
+        teachers.add("Barkved");
+        teachers.add("Anders"); 
+        teachers.add("Andreas");
         
         Collections.sort(teachers);
-        for(String print : teachers)
+        for (int i = 0; i < teachers.size(); i++)
         {
-            System.out.println(teachers);
+            System.out.println(teachers.get(i));
         }
-    
     }
-  
+    
     public void WordLength()
     {
         /**
@@ -78,7 +81,7 @@ public class ArrayListMethods
         members.add("Aguero");
         members.add("Pogba"); 
        
-        System.out.println("The length of the word is " + members.size(members.length()));
+        //System.out.println("The length of the word is " + members.size(members.length()));
       
     }
     }   
