@@ -1,8 +1,10 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ RemoveLast()
+comment0.target=ArrayListMethods
+comment0.text=\n\ Couple\ of\ assigments\ for\ myself\ that\ i'm\ currently\ working\ with\ on\ Mooc.fi\n\ \n\ @author\ (Khalid)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=
-comment1.target=void\ SortByAlphabetical()
+comment1.target=void\ RemoveLast()
 comment2.params=
-comment2.target=void\ WordLength()
-numComments=3
+comment2.target=void\ SortByAlphabetical()
+comment3.params=
+comment3.target=void\ SortNumbers()
+numComments=4

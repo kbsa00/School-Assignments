@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Arrays;
+import java.util.Random; 
 /**
  * Couple of assigments for myself that i'm currently working with on Mooc.fi
  * 
@@ -13,6 +15,7 @@ public class ArrayListMethods
     private ArrayList<String> teachers; 
     private ArrayList<String> members;
     private ArrayList<String> students;
+     
     
     public void RemoveLast()
     {
@@ -69,19 +72,42 @@ public class ArrayListMethods
         }
     }
     
-    public void WordLength()
+    public void SortNumbers()
     {
-        /**
-         * Ikke ferdig med denne delen her. Jobber med den fortsatt! 
-         */
+        Random rnd = new Random();
+        Scanner scrr = new Scanner(System.in); 
+        int [] numbers = new int[7];
         
-        members = new ArrayList<String>(); 
-        members.add("Ronaldo");
-        members.add("Messi");
-        members.add("Aguero");
-        members.add("Pogba"); 
-       
-        //System.out.println("The length of the word is " + members.size(members.length()));
-      
-    }
+        for (int i = 0; i < numbers.length; i++)
+        {
+            numbers[i] = scrr.nextInt();
+        
+        }
+        
+        System.out.println("Printing out numbers");
+        
+        for(int p : numbers)
+        {
+            System.out.println(p);
+        }
+        
+        int max = numbers[0]; 
+        int min = numbers[0]; 
+        
+        for(int i = 0; i < numbers.length; i++)
+        {
+            if(numbers[i] < max)
+            {
+              max = numbers[i]; 
+            }
+            if(numbers[i] > min)
+            {
+                min = numbers[i];
+            }
+        
+        }
+        
+        System.out.println("Høyeste tallet i Arrayen er: " + max);
+        System.out.println("Laveste tallet i Arrayen er: " + min);
     }   
+}
