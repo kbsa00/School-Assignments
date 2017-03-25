@@ -10,23 +10,21 @@ import java.util.Random;
  * @version (a version number or a date)
  */
 public class ArrayListMethods
-{
-    private ArrayList<String> brotherslist;
-    private ArrayList<String> teachers; 
-    private ArrayList<String> members;
-    private ArrayList<String> students;
-     
-    
-    public void RemoveLast()
+{ 
+    public void Remove()
     {
         /**
          * This is a method for removing the last person in the ArrayList.
          */
-        
+        ArrayList<String> brotherslist = new ArrayList<>(); 
         brotherslist = new ArrayList<String>(); 
         brotherslist.add("Khalid"); 
-        brotherslist.add("Hasse");
+        brotherslist.add("Hal");
         brotherslist.add("Mudasar");
+        brotherslist.add("Julius"); 
+        brotherslist.add("Cesar"); 
+        brotherslist.add("Barry"); 
+        brotherslist.add("Bruce");
         
         System.out.println("Here's the list of the brothers");
         for(String liste : brotherslist)
@@ -34,26 +32,40 @@ public class ArrayListMethods
             System.out.println(liste);
         }
         String answer;
+        int amount; 
         Scanner scr = new Scanner(System.in);
-        answer = scr.nextLine().toLowerCase();
-        if(answer.equals("remove"))
+      
+        
+        System.out.println("\nHow many people do you want to delete from the family list");
+        amount = scr.nextInt();
+        
+      
+       for(int y = 0; y <= amount; y++){
+       System.out.println("Whats the name of the person you want to delete");
+       answer = scr.nextLine();  
+        for(int i = 0; i < brotherslist.size(); i++){
+        
+        if(brotherslist.get(i).equals(answer))
         {
-            brotherslist.remove(brotherslist.size() - 1);
-            System.out.println("List of the Brothers");
+            brotherslist.remove(i);
+            System.out.println("The brother has in index " +  i + " has been deleted.\n");
+            System.out.println("List of the Brothers ");
               for(String liste : brotherslist)
             {
                 
-                System.out.println(liste);
+                System.out.println(liste + "\n");
             }
         }
+       }
+       
+       }
     }
-  
     public void SortByAlphabetical()
     {
         /**
          * This is a method on how to sort ArrayList in alphabetical order
          */
-        
+        ArrayList<String> teachers = new ArrayList<>(); 
         teachers = new ArrayList<String>();
         teachers.add("Per");
         teachers.add("Stein");
@@ -74,40 +86,22 @@ public class ArrayListMethods
     
     public void SortNumbers()
     {
-        Random rnd = new Random();
-        Scanner scrr = new Scanner(System.in); 
-        int [] numbers = new int[7];
+        ArrayList<Integer> numbers = new ArrayList<>();
         
-        for (int i = 0; i < numbers.length; i++)
-        {
-            numbers[i] = scrr.nextInt();
+        numbers.add(55);
+        numbers.add(21);
+        numbers.add(34); 
+        numbers.add(92); 
+        numbers.add(100); 
+        numbers.add(12); 
         
-        }
+        //This is the code that allows us to sort the whole Arraylist. 
+        Collections.sort(numbers);
         
-        System.out.println("Printing out numbers");
-        
-        for(int p : numbers)
+        //Printing out the ArrayList.
+        for(Integer p : numbers)
         {
             System.out.println(p);
         }
-        
-        int max = numbers[0]; 
-        int min = numbers[0]; 
-        
-        for(int i = 0; i < numbers.length; i++)
-        {
-            if(numbers[i] < max)
-            {
-              max = numbers[i]; 
-            }
-            if(numbers[i] > min)
-            {
-                min = numbers[i];
-            }
-        
-        }
-        
-        System.out.println("Høyeste tallet i Arrayen er: " + max);
-        System.out.println("Laveste tallet i Arrayen er: " + min);
     }   
 }
