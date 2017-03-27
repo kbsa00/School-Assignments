@@ -217,6 +217,8 @@ public class ArrayMethods
    
    public void ArrayToArrayList() 
    {
+    //This is a method for how to make an Array to a ArrayList. 
+       
     String[] array ={"Hei", "Hola", "Konichiwa"}; 
     ArrayList<String> list = new ArrayList<>(Arrays.asList(array));
     
@@ -226,7 +228,6 @@ public class ArrayMethods
     }
     
    }
-   
 }
     
  

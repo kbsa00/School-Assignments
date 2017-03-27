@@ -84,6 +84,25 @@ public class ArrayListMethods
         }
     }
     
+    public void fillArrayList()
+    {
+        ArrayList<String> list = new ArrayList<>(); 
+        Scanner scr = new Scanner(System.in); 
+          
+        for(int i = 0; i < 5; i++)
+        {
+            System.out.println("Write the name of the person: "); list.add(scr.nextLine()); 
+        
+        }
+        
+        for(int i = 0; i < list.size(); i++){
+        for(String p : list)
+        {
+            System.out.println(p); 
+        }
+        }
+    }
+    
     public void SortNumbers()
     {
         ArrayList<Integer> numbers = new ArrayList<>();
