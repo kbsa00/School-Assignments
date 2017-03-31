@@ -135,9 +135,9 @@ public class ArrayMethods
    {
        //We are checking if the Array (Letters) contains a specific letter. And we are using Boolean to help us with that.  
        
-       String[] letters = {"a", "f", "s", "o", "s", "t"}; 
+       String[] letters = {"ali", "frank", "sindre", "ola", "sondre", "thomas"}; 
        
-       boolean find = Arrays.asList(letters).contains("s");
+       boolean find = Arrays.asList(letters).contains("sindre");
        System.out.println(find);
        
        //Terminal will return true in this case. 
@@ -228,8 +228,53 @@ public class ArrayMethods
     }
     
    }
-}
+   
+   public int sumOfArray()
+   {
+       int[] num = {10,14,22,40,29}; 
+       int sum = 0;
+       for (int i = 0; i < num.length; i++)
+       {
+           sum += num[i];
+        
+       }
     
+    
+       return sum;
+   }
+   
+   public void array()
+   {
+       int[] array = {1,2,3,4,5}; 
+       int sum = 0;
+       
+       for(int i = 0; i < array.length; i++)
+       {
+           sum = array[i] + array[i +1];
+       }
+       
+       System.out.println(sum);
+    
+   }
+   
+   public void FinIndex()
+   {
+       //In this method we are finding the index of the number 499 using the binarySearch. 
+       
+       int[] num = {22,4323,5232,664, 55, 400, 200, 499, 344, 3434, 2323, 3434, 233, 343}; 
+       
+       Arrays.sort(num);
+       
+       Arrays.toString(num); 
+       
+       System.out.println("The number of index 4 is " + Arrays.binarySearch(num,499));
+       
+       
+       
+   
+   } 
+}
+     
  
      
      

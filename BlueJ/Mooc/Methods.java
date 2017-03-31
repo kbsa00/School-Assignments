@@ -63,4 +63,52 @@ public class Methods
        o = scr.nextInt(); 
        System.out.println("The square root of " + o + " will be" + Math.sqrt(o));
    }
+   
+   
+   public void Week1()
+   {
+       //Password assignment,  
+
+       Scanner scr = new Scanner(System.in); 
+       
+       String username = "";  
+       String password = "";  
+    
+       System.out.println("Please write your username."); 
+       username = scr.nextLine().toLowerCase();
+       System.out.println("\nPlease write your password."); 
+       password = scr.nextLine();
+       System.out.println("Logging in..."); 
+       
+       if(username.equals("khalid") && password.equals("khalid123"))
+       {
+           System.out.println("You have succsessfully logged in. Welcome!"); 
+        
+       }
+       else 
+       {
+           System.out.println("Sorry wrong password or wrong username");
+       }
+   }
+   
+   public void UpToHundred()
+   {
+       //A loop from 1 to hundred. 
+       for(int i = 1; i <= 100; i++)
+       {
+           System.out.println(i); 
+        
+       }
+   }
+   
+   public void HundredToOne()
+   {
+       //A loop from hundred to One. 
+       for (int i = 100; i >=1; i--)
+       {
+           System.out.println(i);
+       }
+    
+    }
+   
 }

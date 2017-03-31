@@ -84,24 +84,6 @@ public class ArrayListMethods
         }
     }
     
-    public void fillArrayList()
-    {
-        ArrayList<String> list = new ArrayList<>(); 
-        Scanner scr = new Scanner(System.in); 
-          
-        for(int i = 0; i < 5; i++)
-        {
-            System.out.println("Write the name of the person: "); list.add(scr.nextLine()); 
-        
-        }
-        
-        for(int i = 0; i < list.size(); i++){
-        for(String p : list)
-        {
-            System.out.println(p); 
-        }
-        }
-    }
     
     public void SortNumbers()
     {
@@ -122,5 +104,78 @@ public class ArrayListMethods
         {
             System.out.println(p);
         }
-    }   
+    }
+    
+    public void fillArray()
+    {
+        ArrayList<String> name = new ArrayList<>(); 
+        Scanner scr = new Scanner(System.in);
+        int num; 
+        System.out.println("Write how many people you want to add to the list"); 
+        num = scr.nextInt(); 
+        for (int i = 0; i < num; i++)
+        {
+            System.out.println("Write your name"); 
+            name.add(scr.nextLine());
+            
+        
+        }
+        
+        System.out.println("Heres the list"); 
+        Collections.sort(name);
+        for(String p : name)
+        {
+            System.out.println(p);
+        }
+        
+        System.out.println("Your list size is " + name.size());
+    
+    
+    }
+    
+    public void Combine()
+    {
+        //This method allows you too 
+        
+        ArrayList<Integer> list1 = new ArrayList<>(); 
+        ArrayList<Integer> list2 = new ArrayList<>(); 
+
+        list1.add(1); 
+        list1.add(2); 
+        list2.add(3); 
+        list2.add(4); 
+
+        //This code allows you to put an ArrayList and combine it too one ArrayList. 
+        list1.addAll(list2);
+        
+        for(int p : list1)
+        {
+            System.out.println(p);
+        }
+    }
+    
+    public void ClearArrayList()
+    {
+        ArrayList<String> list = new ArrayList<>();
+        
+        
+        
+        list.add("Khalid"); 
+        list.add("Mudasar"); 
+        list.add("Robert"); 
+        list.add("Petter"); 
+        for(String p : list)
+        {
+            System.out.println(p);
+        }
+        
+        
+        System.out.println("The size of the list is " + list.size());
+
+        list.clear(); 
+        System.out.println("After deleting the list " + list.size());
+    
+    
+    
+    }
 }
