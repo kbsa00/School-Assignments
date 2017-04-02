@@ -21,7 +21,7 @@ public class Methods
        
        for (int i = 0; i < name.length(); i++)
        {
-           System.out.println(i + " "+ "Character:  " + name.charAt(i));
+           System.out.println((i + 1) + " "+ "Character:  " + name.charAt(i));
        }
        
        
@@ -109,6 +109,22 @@ public class Methods
            System.out.println(i);
        }
     
-    }
+   }
+   
+   
+   public void test(CharSequence letters)
+   {
+       for(int i = 0; i < letters.length(); i++)
+       {
+           System.out.println(letters.charAt(i));
+        
+       }
+       
+       Methods m1 = new Methods();
+       
+       String name = "Khalid"; 
+       
+       m1.test(name);
+   }
    
 }

@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=void\ UpToHundred()
 comment4.params=
 comment4.target=void\ HundredToOne()
-numComments=5
+comment5.params=letters
+comment5.target=void\ test(java.lang.CharSequence)
+numComments=6
