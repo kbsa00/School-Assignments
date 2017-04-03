@@ -156,6 +156,8 @@ public class ArrayListMethods
     
     public void ClearArrayList()
     {
+        //A method that clears everything in your ArrayList. 
+        
         ArrayList<String> list = new ArrayList<>();
         
         
