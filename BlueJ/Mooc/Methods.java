@@ -36,6 +36,7 @@ public class Methods
        Scanner scr = new Scanner(System.in); 
        int x; 
        int y;
+       
        System.out.println("Write a number"); 
        y = scr.nextInt(); 
        System.out.println("Write another number:"); 

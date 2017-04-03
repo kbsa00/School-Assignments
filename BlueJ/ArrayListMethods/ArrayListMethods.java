@@ -146,12 +146,16 @@ public class ArrayListMethods
         list2.add(4); 
 
         //This code allows you to put an ArrayList and combine it too one ArrayList. 
-        list1.addAll(list2);
-        
+        list1.addAll(list2); 
+      
         for(int p : list1)
         {
             System.out.println(p);
         }
+        list2.clear();
+        
+        System.out.println("Størrelsen på liste 2: " + list2.size());
+      
     }
     
     public void ClearArrayList()
