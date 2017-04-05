@@ -6,7 +6,7 @@ import java.awt.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GUI
+public class GUI extends JFrame
 {
     public void Panel()
     {
@@ -30,24 +30,21 @@ public class GUI
     
     }
     
-    public void Survey()
+    public void MeatOrFish()
     {
-        JFrame frame = new JFrame(); 
+        
         JPanel panel = new JPanel();
         JLabel label = new JLabel();
         
-        
-        
-        frame.setVisible(true); 
-        frame.setSize(200, 200);
-        frame.setTitle("Survey");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true); 
+        setTitle("Survey");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
      
         panel.setLayout(new BorderLayout()); 
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         label = new JLabel("CHOOSE MEAT OR FISH?"); 
         panel.add(label, BorderLayout.NORTH); 
-        frame.add(panel);
+        add(panel);
         
         JRadioButton r1 = new JRadioButton("Meat"); 
         JRadioButton r2 = new JRadioButton("Fish");
@@ -56,8 +53,73 @@ public class GUI
         
         JButton b1 = new JButton(); 
         b1 = new JButton("DONE");
+        pack();
+        
 
         
         
+    }
+    
+    public void Survery()
+    {
+        JPanel p = new JPanel();
+        JLabel l = new JLabel(); 
+        
+        setTitle("Survey");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setSize(200, 200);
+        setVisible(true);
+        
+        
+        p.setLayout(new GridLayout(4, 1));
+        add(p, BorderLayout.NORTH); 
+        l = new JLabel("Are you Sure?"); 
+        p.add(l); 
+        JRadioButton b1 = new JRadioButton("Yes"); 
+        JRadioButton b2 = new JRadioButton("No");
+        JButton b3 = new JButton("Done");
+        p.add(b1); 
+        p.add(b2); 
+        p.add(b3);
+    
+    }
+    
+    public void telphone()
+    {
+        JPanel p = new JPanel();
+        JPanel ps = new JPanel();
+        JLabel l = new JLabel();
+        
+        setTitle("Telephone"); 
+        setSize(300, 300); 
+        setVisible(true); 
+        
+        ps.add(new JTextField(10));
+        add(ps, BorderLayout.SOUTH);
+        l = new JLabel("Numbers"); 
+        ps.add(l);
+        p.setLayout(new GridLayout(4,3));
+        add(p); 
+        
+        for(int i = 1; i <= 9; i++)
+        {
+            JButton b = new JButton("" + i); 
+            p.add(b);
+        }
+        
+        
+        
+        
+        //JButton b1 = new JButton("*"); 
+        //JButton b2 = new JButton("#"); 
+        //p.add(b1); 
+        //p.add(b2); 
+        
+        
+        
+    
+    
+    
     }
 }
