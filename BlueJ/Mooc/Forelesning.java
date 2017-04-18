@@ -7,15 +7,13 @@ import java.awt.event.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class JFRAME extends JFrame implements ActionListener
+public class Forelesning extends JFrame implements ActionListener
 {
-    //private JFrame f; 
-    //private JTextArea j;
-    public JFRAME()
+    public Forelesning()
     {
      setTitle("Huskelapp");
      add(new JTextArea(), BorderLayout.CENTER);
-      setVisible(true);
+     setVisible(true);
      JPanel p = new JPanel(new GridLayout(1, 3));
      JButton b2 = new JButton("Lagre"); 
      JButton b3 = new JButton("hente");
@@ -38,7 +36,7 @@ public class JFRAME extends JFrame implements ActionListener
     
     public void actionPerformed(ActionEvent event)
     {
-        String text = event.getActionCommand();
+      String text = event.getActionCommand();
         
         if(text.equals("Avslutt")){
         System.out.println("Avslutter..");

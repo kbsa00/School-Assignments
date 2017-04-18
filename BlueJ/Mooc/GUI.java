@@ -1,5 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.FlowLayout; 
+import java.awt.event.ActionListener; 
+import java.awt.event.ActionEvent;
 /**
  * Write a description of class GUI here.
  * 
@@ -8,6 +11,12 @@ import java.awt.*;
  */
 public class GUI extends JFrame
 {
+    private JTextField item1;
+    private JTextField item2;
+    private JTextField item3;
+    private JPasswordField passord; 
+    
+    
     public void Panel()
     {
         //The assignment said that we had to alling the label "Hello" in the middle of the textbox. 
@@ -108,18 +117,19 @@ public class GUI extends JFrame
             p.add(b);
         }
         
-        
-        
-        
-        //JButton b1 = new JButton("*"); 
-        //JButton b2 = new JButton("#"); 
-        //p.add(b1); 
-        //p.add(b2); 
-        
-        
-        
+      
+        JButton b1 = new JButton("*");
+        JButton b2 = new JButton("#");
+        JButton b3 = new JButton("0"); 
+        p.add(b1); 
+        p.add(b3);
+        p.add(b2);  
+    }
     
     
+    public void test()
+    {
+       
     
     }
 }

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=
-comment0.target=JFRAME()
+comment0.target=Forelesning()
 comment1.params=event
 comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
 numComments=2
