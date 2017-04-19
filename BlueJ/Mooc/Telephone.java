@@ -31,13 +31,13 @@ import java.awt.event.*;
         
         JPanel p = new JPanel();
         JPanel ps = new JPanel();
-        JLabel l = new JLabel();
-        JPanel panel = new JPanel(); 
+        JPanel panel = new JPanel();
+        JLabel l = new JLabel("numbers"); 
         JTextField j = new JTextField();
         
         ps.add(new JTextField(5));
         add(ps, BorderLayout.EAST);
-        l = new JLabel("Numbers"); 
+   
         ps.add(l);
         p.setLayout(new GridLayout(4,3));
         add(p);

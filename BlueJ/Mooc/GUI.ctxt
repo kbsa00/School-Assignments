@@ -8,5 +8,5 @@ comment2.target=void\ Survery()
 comment3.params=
 comment3.target=void\ telphone()
 comment4.params=
-comment4.target=void\ test()
+comment4.target=void\ input()
 numComments=5

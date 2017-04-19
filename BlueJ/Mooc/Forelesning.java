@@ -1,6 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;  
+import java.awt.event.*; 
 /**
  * Write a description of class test here.
  * 
@@ -37,21 +37,28 @@ public class Forelesning extends JFrame implements ActionListener
     public void actionPerformed(ActionEvent event)
     {
       String text = event.getActionCommand();
-        
+      int choice;   
         if(text.equals("Avslutt")){
-        System.out.println("Avslutter..");
-        System.exit(0);
+        JOptionPane.showConfirmDialog(null, "Er du sikker på at du vil avslutte?");
+        if(choice == YES_OPTION)
+        {
+            JOptionPane.showMessageDialog(null,"Avsluttet.");
+        }
+        else if(choice == NO_OPTION)
+        {
+            JOptionPane.showMessageDialog(null,"Ikke avsluttet");
+        }
         
       } 
       else if(text.equals("Lagre")){
     
-        System.out.println("Lagret og Avsluttet.");
-        System.exit(0); 
+        JOptionPane.showConfirmDialog(null,"Er du sikker på at du vil lagre?");
+        
         
       }
       else if(text.equals("Hent"))
       {
-          System.out.println("Henter..");
+          JOptionPane.showMessageDialog(null, "Henter..");
       }
     }
 }
